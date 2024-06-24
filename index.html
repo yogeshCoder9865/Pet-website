@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Paradise Emporium</title>
+  <link rel="stylesheet" href="./CSS/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+ 
+
+
+    <header>
+        <div class="top-bar">
+          <div class="logo">
+            <img src="./Images/logo.png" alt="Logo">
+            <span>Pet Paradise</span>
+          </div>
+          <div class="search-bar">
+            <input type="text" placeholder="Search Products">
+            <select>
+              <option>All Categories</option>
+              <option>Food Categories</option>
+              <option>Medicine Categories</option>
+              <option>Toys Categories</option>  
+            </select>
+            <button><i class="fas fa-search"></i></button>
+          </div>
+          <div class="account-info">
+            <a href="./index.html#target_about"><i class="fas fa-users"></i> About us</a>
+              <a href="profile.html"><i class="fas fa-heart"></i> Profile</a>
+            <a href="contact.html"><i class="fas fa-user"></i> Contact Us</a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span> $40.00</a>
+            <button class="btn" onclick="redirectToPage()">SignUp</button>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="product.html"><i class="fa-brands fa-dropbox"></i> Foods</a></li>
+            <li><a href="care.html"><i class="fa-solid fa-hand-holding-heart"></i> Care Guide</a></li>
+            <li><a href="./product.html#target-block2"><i class="fa-solid fa-meteor"></i> Toys and Accessories</a></li>
+            <li><a href="https://www.freelancer.in/u/YogeshwaranTech"><i class="fa-brands fa-blogger-b"></i>Blog</a></li>
+            <li><a href="#medi" id="scroll-button"><i class="fa-solid fa-synagogue"></i> Special Offers</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>New Year Sale Offer 2024</h1>
+            <p>20% OFF</p>
+            <button onclick="about('cat')">Start Shopping</button>
+        </div>
+    </section>
+    <section class="slider">
+        <div class="slider-track">
+            <div class="slide"><img src="./Images/image1.png" alt="Slide 1"></div>
+            <div class="slide"><img src="./Images/image2.png" alt="Slide 2"></div>
+            <div class="slide"><img src="./Images/image3.png" alt="Slide 3"></div>
+            <div class="slide"><img src="./Images/image4.jpg" alt="Slide 3"></div>
+            <div class="slide"><img src="./Images/image5.jpg" alt="Slide 3"></div>
+            <div class="slide"><img src="./Images/image1.png" alt="Slide 4"></div>
+            <div class="slide"><img src="./Images/image2.png" alt="Slide 5"></div>
+            <div class="slide"><img src="./Images/image3.png" alt="Slide 6"></div>
+            <div class="slide"><img src="./Images/image4.jpg" alt="Slide 6"></div>
+            <div class="slide"><img src="./Images/image5.jpg" alt="Slide 6"></div>
+        </div>
+        <button class="prev" onclick="moveSlides(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlides(1)">&#10095;</button>
+    </section>
+    <section class="categories" id="cat">
+        <h2>Our Top Categories</h2>
+        <div class="category-list">
+            <div class="category-item"><i class="fas fa-paw"></i><span>Food & Treats</span></div>
+            <div class="category-item"><i class="fas fa-bone"></i> <span>Toys</span></div>
+            <div class="category-item"><i class="fas fa-heartbeat"></i> <span>Health & Wellness</span></div>
+            <div class="category-item"><i class="fas fa-bed"></i> <span>Beds & Furniture</span></div>
+            <div class="category-item"><i class="fas fa-collar"></i> <span>Collars & Leashes</span></div>
+        </div>
+    </section>
+    <section class="products">
+        <h2>Popular Food Products</h2>
+        <div class="product-list">
+    
+            <div class="product-card">
+                <img src="./Images/pro1.jpg" alt="Product Image">
+                <h3>Grain Free Food</h3>
+                <p>M&S Foods</p>
+                <div class="price-rating">
+                    <span>$24.56</span>
+                    <span class="old-price">$34.56</span>
+                    <span class="rating"><i class="fas fa-star"></i> 4.6</span>
+                    <span class="sold"> 7,489 Sold</span>
+                </div>
+                <button onclick="redirectToTargetPage()"><i class="fas fa-cart-plus"></i></button>
+            </div>
+    
+            <div class="product-card">
+                <img src="./Images/pro3.jpg" alt="Product Image">
+                <h3>Whiscos Pestiscos</h3>
+                <p>Whiscos</p>
+                <div class="price-rating">
+                    <span>$44.36</span><br>
+                    <span class="old-price">$54.56</span><br>
+                    <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                    <span class="sold"> 8,581 Sold</span>
+                </div>
+                <button onclick="redirectToTargetPage()"><i class="fas fa-cart-plus"></i></button>
+            </div>
+            
+            <div class="product-card">
+                <img src="./Images/pro5.jpg" alt="Product Image">
+                <h3>Convoco</h3>
+                <p>Precisa</p>
+                <div class="price-rating">
+                    <span>$34.56</span>
+                    <span class="old-price">$24.56</span>
+                    <span class="rating"><i class="fas fa-star"></i> 4.3</span>
+                    <span class="sold"> 6,432 Sold</span>
+                </div>
+                <button onclick="redirectToTargetPage()"><i class="fas fa-cart-plus"></i></button>
+            </div>
+    
+            <div class="product-card">
+              <img src="./Images/pro4.jpg" alt="Product Image">
+              <h3>Rellino Ceramoso</h3>
+              <p>Nuvo</p>
+              <div class="price-rating">
+                  <span>$24.56</span>
+                  <span class="old-price">$34.56</span>
+                  <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                  <span class="sold"> 7,489 Sold</span>
+              </div>
+              <button onclick="redirectToTargetPage()"><i class="fas fa-cart-plus"></i></button>
+          </div>
+    
+            <div class="product-card">
+                <img src="./Images/pro6.jpg" alt="Product Image">
+                <h3>Meat Grains</h3>
+                <p>Salmon</p>
+                <div class="price-rating">
+                    <span>$56.16</span>
+                    <span class="old-price">$64.56</span>
+                    <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                    <span class="sold"> 9,297 Sold</span>
+                </div>
+                <button onclick="redirectToTargetPage()"><i class="fas fa-cart-plus"></i></button>
+            </div>
+    
+           
+        </div>
+    </section>
+    <section class="products">
+        <h2>Popular Accessories </h2>
+        <div class="product-list">
+         
+    
+            <div class="product-card">
+                <img src="./Images/t1.jpg" alt="Product Image">
+                <h3>Grain Free Food</h3>
+                <p>M&S Foods</p>
+                <div class="price-rating">
+                    <span>$24.56</span>
+                    <span class="old-price">$34.56</span>
+                    <span class="rating"><i class="fas fa-star"></i> 4.6</span>
+                    <span class="sold"> 7,489 Sold</span>
+                </div>
+                <button onclick="redirectToTargetPage1()"><i class="fas fa-cart-plus"></i></button>
+            </div>
+    
+            <div class="product-card">
+                <img src="./Images/t2.jpg" alt="Product Image">
+                <h3>Whiscos Pestiscos</h3>
+                <p>Whiscos</p>
+                <div class="price-rating">
+                    <span>$44.36</span><br>
+                    <span class="old-price">$54.56</span><br>
+                    <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                    <span class="sold"> 8,581 Sold</span>
+                </div>
+                <button onclick="redirectToTargetPage1()"><i class="fas fa-cart-plus"></i></button>
+            </div>
+            
+            <div class="product-card">
+                <img src="./Images/t3.jpg" alt="Product Image">
+                <h3>Convoco</h3>
+                <p>Precisa</p>
+                <div class="price-rating">
+                    <span>$34.56</span>
+                    <span class="old-price">$24.56</span>
+                    <span class="rating"><i class="fas fa-star"></i> 4.3</span>
+                    <span class="sold"> 6,432 Sold</span>
+                </div>
+                <button onclick="redirectToTargetPage1()"><i class="fas fa-cart-plus"></i></button>
+            </div>
+    
+            <div class="product-card">
+              <img src="./Images/t4.jpg" alt="Product Image">
+              <h3>Rellino Ceramoso</h3>
+              <p>Nuvo</p>
+              <div class="price-rating">
+                  <span>$24.56</span>
+                  <span class="old-price">$34.56</span>
+                  <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                  <span class="sold"> 7,489 Sold</span>
+              </div>
+              <button onclick="redirectToTargetPage1()"><i class="fas fa-cart-plus"></i></button>
+          </div>
+    
+            <div class="product-card">
+                <img src="./Images/tt2.jpg" alt="Product Image">
+                <h3>Meat Grains</h3>
+                <p>Salmon</p>
+                <div class="price-rating">
+                    <span>$56.16</span>
+                    <span class="old-price">$64.56</span>
+                    <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                    <span class="sold"> 9,297 Sold</span>
+                </div>
+                <button onclick="redirectToTargetPage1()"><i class="fas fa-cart-plus"></i></button>
+            </div>
+    
+        </div>
+    </section>
+    <section class="container" id="medi">
+      <div class="main-banner">
+          <img src="./Images/doc.png" alt="Doctor">
+          <div class="content">
+              <h1>Hello</h1>
+              <p>New and improved baked formula for maximum nutrition and Enhance your Pet Immunity system Withour Food Products. Our Food Products Contains lots of Immunity Boosters and Mineral Contents Thats Going to Help your PEt Growth</p>
+          </div>
+          <img src="./Images/grid_med.png" alt="medicine" class="imagemed">
+      </div>
+      <div class="banner">
+          <div class="content">
+              <p>30% more metabolizable energy</p>
+              <a href="#" class="shop-now">Shop Now</a>
+          </div>
+          <img src="./Images/gred_med2.png" alt="Product 1">
+          <div class="discount">UP TO 30% OFF</div>
+      </div>
+      <div class="banner">
+          <div class="content">
+              <p>Make Homecooked Meals 100% Balanced</p>
+              <a href="#" class="shop-now">Shop Now</a>
+          </div>
+          <img src="./Images/7.jpg" alt="Product 2">
+          <div class="discount">UP TO 21% OFF</div>
+      </div>
+    </section>
+    <div class="rotation">
+        <div class="pics">
+         <img src="./Images/image1.png" alt="" >
+         <img src="./Images/banner2.jpg" alt="" >
+         <img src="./Images/banner3.jpg" alt="" >
+         <img src="./Images/banner4.png" alt="" >
+         <img src="./Images/banner5.png" alt="" >
+         <img src="./Images/banner6.jpg" alt="" >
+         
+        </div>
+    </div>
+    </main>
+    <footer class="footer" id="target_about">
+    <div class="footer-container">
+        <div class="footer-row">
+            <div class="footer-col">
+                <h4>About Us</h4>
+                <p>Pet Paradise Emporium is your go-to source for premium pet products. We offer a wide range of essentials to ensure your pets are happy and healthy.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="https://www.freelancer.in/u/YogeshwaranTech">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="#">Email: yogeshwarandofficial@gmail.com</a></li>
+                    <li><a href="#">Phone: +91 7010850923</a></li>
+                    <li><a href="#">Address: 60N/3 , Narasappan Street , TVR</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.freelancer.in/u/YogeshwaranTech" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/itzz_coding_yogesh" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/yogeshwaran-d" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+  <main>
+    
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

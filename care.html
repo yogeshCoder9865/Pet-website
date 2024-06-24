@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Care Guide</title>
+    <link rel="stylesheet" href="./CSS/care.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+          <div class="logo">
+            <img src="./Images/logo.png" alt="Logo">
+            <span>Pet Paradise</span>
+          </div>
+          <div class="search-bar">
+            <input type="text" placeholder="Search Products">
+            <select>
+              <option>All Categories</option>
+              <option>Food Categories</option>
+              <option>Medicine Categories</option>
+              <option>Toys Categories</option>  
+            </select>
+            <button><i class="fas fa-search"></i></button>
+          </div>
+          <div class="account-info">
+            <a href="./index.html#target_about"><i class="fas fa-users"></i> About us</a>
+              <a href="profile.html"><i class="fas fa-heart"></i> Profile</a>
+            <a href="contact.html"><i class="fas fa-user"></i> Contact Us</a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i> <span class="cart-count"> 0 </span> $40.00</a>
+            <button class="btn" onclick="redirectToPage()">SignUp</button>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="product.html"><i class="fa-brands fa-dropbox"></i> Foods</a></li>
+            <li><a href="care.html"><i class="fa-solid fa-hand-holding-heart"></i> Care Guide</a></li>
+            <li><a href="./product.html#target-block2"><i class="fa-solid fa-meteor"></i> Toys and Accessories</a></li>
+            <li><a href="https://www.freelancer.in/u/YogeshwaranTech"><i class="fa-brands fa-blogger-b"></i>Blog</a></li>
+            <li><a href="index.html" id="scroll-button"><i class="fa-solid fa-synagogue"></i> Special Offers</a></li>
+          </ul>
+        </nav>
+      </header>
+    <div class="container">
+        <h1 id="sp">Pet Care Guide</h1>
+        <div class="grid">
+            <div class="card">
+                <div class="card-text">
+                    <h2>Dogs</h2>
+                    <h3>Nutrition</h3>
+                    <p>Proper nutrition is essential for your dog’s health and well-being. Choose high-quality dog food that meets your dog’s specific needs based on age, size, breed, and activity level. Consult your veterinarian for recommendations on the best diet for your dog. Remember to provide fresh water at all times.</p>
+                    <h3>Exercise</h3>
+                    <p>Regular exercise is crucial for maintaining your dog’s physical and mental health. Different breeds have varying exercise needs, so ensure your dog gets the appropriate amount of daily activity. Activities like walking, running, playing fetch, and visiting the dog park can help keep your dog fit and happy.</p>
+                    <h3>Grooming</h3>
+                    <p>Grooming helps keep your dog’s coat and skin healthy. Regular brushing removes dirt, prevents matting, and reduces shedding. Bathing should be done as needed, typically once a month, using a dog-friendly shampoo</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="card-image">
+                    <img src="./Images/Cute-dogs.jpg" alt="Dog">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-text">
+                    <h2>Cats</h2>
+                    <h3>Nutrition</h3>
+                    <p>Proper nutrition is crucial for your cat’s overall health. Choose high-quality cat food that meets their specific needs based on age, size, breed, and health status. Cats are obligate carnivores, which means they require a diet rich in animal protein. Consult your veterinarian for recommendations on the best diet for your cat. Always provide fresh water to keep your cat hydrated.</p>
+                    <h3>Exercise</h3>
+                    <p>Cats need regular exercise to maintain a healthy weight and prevent boredom. Encourage physical activity with interactive toys, laser pointers, and climbing structures like cat trees. Regular play sessions help to stimulate your cat’s natural hunting instincts and keep them fit.</p>
+                    <h3>Grooming</h3>
+                    <p>Grooming helps keep your cat’s coat and skin healthy. Brush your cat regularly to remove loose fur and prevent matting, especially if they have long hair. Regular grooming can also reduce shedding and hairballs. Bathing is usually not necessary for most cats, but you can wipe them down with a damp cloth if needed. </p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="card-image">
+                    <img src="./Images/cat.jpg" alt="Cat">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-text">
+                    <h2>Small Animals</h2>
+                    <h3>Nutrition</h3>
+                    <p>Proper nutrition is essential for the health of small animals like rabbits, guinea pigs, hamsters, and ferrets. Each species has unique dietary requirements. For example, rabbits need a diet high in hay, fresh vegetables, and a small number of pellets, while guinea pigs require vitamin C-rich foods.</p>
+                    <h3>Exercise</h3>
+                    <p>Small animals need regular exercise to stay healthy and happy. Provide a spacious enclosure with plenty of room for movement. Include exercise wheels for hamsters and gerbils, and create safe play areas outside the cage for rabbits and guinea pigs</p>
+                    <h3>Grooming</h3>
+                    <p>Grooming needs vary by species. For instance, long-haired guinea pigs and rabbits require regular brushing to prevent matting, while short-haired varieties need less frequent grooming. Hamsters and gerbils generally keep themselves clean but may need occasional help with brushing. </p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="card-image">
+                    <img src="./Images/small_animals.jpg" alt="Small Animals">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-text">
+                    <h2>Reptiles</h2>
+                     <h3>Nutrition</h3>
+                     <p>Caring for a dog involves several important aspects to ensure they remain healthy,  provided on dog food packaging or by your vet to prevent obesity. Always ensure your dog has access to clean, fresh water at all times.</p>
+                     <h3>Health Care</h3>
+                     <p>Regular exercise is essential for a dog’s health. The amount and type of exercise depend on the breed, age,  dog engaged. This can be achieved through puzzle toys, training exercises, and social interaction with other dogs.</p>
+                     <h3>Training and Socialization</h3>
+                     <p>Training and socialization are vital for a different environments, people, and other animals builds confidence and reduces anxiety.</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="card-image">
+                    <img src="./Images/rapp.jpg" alt="Reptile">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-text">
+                    <h2>Birds</h2>
+                    <h3>Nutrition</h3>
+                    <p>Caring for a bird involves several important aspects to ensure they remain healthy, happy, and well-adjusted. Providing a balanced diet is essential. clean water should always be available, and it should be changed daily.
+                    
+                    </p>
+                    <h3>Exercise</h3>
+                    <p>Exercise and mental stimulation are crucial for a bird’s well-being. Birds need space to move around, so a spacious cage is important. Additionally, allowing them time outside of the cage to fly and explore in a safe environment is beneficial. </p>
+                    <h3>Grooming</h3>
+                    <p>Regular grooming is necessary for maintaining a bird's health. This includes nail trimming and beak maintenance, which might require a vet's help if you are not comfortable doing it yourself. Birds also need regular baths or access to water to clean their feathers. .</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="card-image">
+                    <img src="./Images/birdd.jpg" alt="Bird">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer" id="target_about">
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>About Us</h4>
+                    <p>Pet Paradise Emporium is your go-to source for premium pet products. We offer a wide range of essentials to ensure your pets are happy and healthy.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Product</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="https://www.freelancer.in/u/YogeshwaranTech">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="#">Email: yogeshwarandofficial@gmail.com</a></li>
+                        <li><a href="#">Phone: +91 7010850923</a></li>
+                        <li><a href="#">Address: 60N/3 , Narasappan Street , TVR</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.freelancer.in/u/YogeshwaranTech" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/itzz_coding_yogesh" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/yogeshwaran-d" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+    
+</body>
+</html>

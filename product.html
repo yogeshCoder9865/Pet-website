@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop - Products</title>
+    <link rel="stylesheet" href="./CSS/product.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="./Images/logo.png" alt="Pet Shop Logo"> 
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html" class="active">Products</a></li>
+                <li><a href="care.html">Care Services</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="signup.html">SignUp</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+        <header>
+            <input type="text" placeholder="Search Product">
+            <div class="user-options">
+                <img src="./Images/not.png" alt="Notifications" onclick="redirectToPageh()">
+                <img src="./Images/msg.png" alt="Messages" onclick="about('tar-a')">
+                <img src="./Images/user.png" alt="User Avatar" onclick="redirectToPages()">
+            </div>
+        </header>
+
+
+        <section class="products" id="target-block">
+            <h2>Pet Food</h2>
+            <div class="product-grid">
+                <div class="product-card" data-product-id="1">
+                    <img src="./Images/1.jpg" alt="Product Image" id="main-image">
+                    <h3>Pawsome Eats</h3>
+                    <p class="price">$30.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="2">
+                    <img src="./Images/4.jpg" alt="Product Image" id="main-image">
+                    <h3>WhiskerWise</h3>
+                    <p class="price">$60.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="3">
+                    <img src="./Images/7.jpg" alt="Product Image" id="main-image">
+                    <h3>TailTreats
+                    </h3>
+                    <p class="price">$40.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="4">
+                    <img src="./Images/8.jpg" alt="Product Image" id="main-image">
+                    <h3>MeowMunch</h3>
+                    <p class="price">$30.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="5">
+                    <img src="./Images/8.jpg" alt="Product Image" id="main-image">
+                    <h3>BarkBites</h3>
+                    <p class="price">$50.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="6">
+                    <img src="./Images/9.jpg" alt="Product Image" id="main-image">
+                    <h3>FurryFeasts</h3>
+                    <p class="price">$46.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="7">
+                    <img src="./Images/11.jpg" alt="Product Image" id="main-image">
+                    <h3>HappyPaws Kitchen</h3>
+                    <p class="price">$57.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="8">
+                    <img src="./Images/12.jpg" alt="Product Image" id="main-image">
+                    <h3>WoofWonders</h3>
+                    <p class="price">$90.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="9">
+                    <img src="./Images/7.jpg" alt="Product Image" id="main-image">
+                    <h3>Purrrfection Meals</h3>
+                    <p class="price">$78.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="10">
+                    <img src="./Images/4.jpg" alt="Product Image" id="main-image">
+                    <h3>NutriNibblesD</h3>
+                    <p class="price">$44.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="11">
+                    <img src="./Images/product1.jpg" alt="Product Image" id="main-image">
+                    <h3>Pawfect Portions</h3>
+                    <p class="price">$57.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="12">
+                    <img src="./Images/11.jpg" alt="Product Image" id="main-image">
+                    <h3>DivineDoggie Delights</h3>
+                    <p class="price">$36.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+
+
+        </section>
+
+
+        <section class="products" id="target-block1">
+            <h2>Pet Accessories</h2>
+            <div class="product-grid">
+                <div class="product-card" data-product-id="13">
+                    <img src="./Images/a1.jpg" alt="Product Image" id="main-image">
+                    <h3>Petco</h3>
+                    <p class="price">$40.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="14">
+                    <img src="./Images/a2.jpg" alt="Product Image" id="main-image">
+                    <h3>Chewy</h3>
+                    <p class="price">$35.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="15">
+                    <img src="./Images/a3.jpg" alt="Product Image" id="main-image">
+                    <h3>PetSmart</h3>
+                    <p class="price">$38.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="16">
+                    <img src="./Images/a4.jpg" alt="Product Image" id="main-image">
+                    <h3>Kong</h3>
+                    <p class="price">$25.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="17">
+                    <img src="./Images/a5.jpg" alt="Product Image" id="main-image">
+                    <h3>Frisco</h3>
+                    <p class="price">$45.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="18">
+                    <img src="./Images/a6.jpg" alt="Product Image" id="main-image">
+                    <h3>Outward Hound</h3>
+                    <p class="price">$50.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="19">
+                    <img src="./Images/a8.jpg" alt="Product Image" id="main-image">
+                    <h3>Ruffwear</h3>
+                    <p class="price">$46.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="20">
+                    <img src="./Images/a9.jpg" alt="Product Image" id="main-image">
+                    <h3>Trixie</h3>
+                    <p class="price">$36.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="21">
+                    <img src="./Images/a10.jpg" alt="Product Image" id="main-image">
+
+                    <h3>Bergance</h3>
+                    <p class="price">$24.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="22">
+                    <img src="./Images/a1.jpg" alt="Product Image" id="main-image">
+                    <h3>FurHaven</h3>
+                    <p class="price">$50.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="23">
+                    <img src="./Images/a2.jpg" alt="Product Image" id="main-image">
+                    <h3>Petmate</h3>
+                    <p class="price">$29.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="24">
+                    <img src="./Images/a6.jpg" alt="Product Image" id="main-image">
+                    <h3>Puppia</h3>
+                    <p class="price">$39.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+
+
+        </section>
+
+
+        <section class="products" id="target-block2">
+            <h2>Pet Toys</h2>
+            <div class="product-grid">
+                <div class="product-card" data-product-id="25">
+                    <img src="./Images/tt1.jpg" alt="Product Image" id="main-image">
+                    <h3>Petco</h3>
+                    <p class="price">$60.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="26">
+                    <img src="./Images/tt2.jpg " alt="Product Image" id="main-image">
+                    <h3>Chewy</h3>
+                    <p class="price">$56.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="27">
+                    <img src="./Images/tt3.jpg" alt="Product Image" id="main-image">
+                    <h3>PetSmart</h3>
+                    <p class="price">$58.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="28">
+                    <img src="./Images/tt4.jpg" alt="Product Image" id="main-image">
+                    <h3>Kong</h3>
+                    <p class="price">$45.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="29">
+                    <img src="./Images/t5.jpg" alt="Product Image" id="main-image">
+                    <h3>Frisco</h3>
+                    <p class="price">$29.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="30">
+                    <img src="./Images/t6.jpg" alt="Product Image" id="main-image">
+                    <h3>Outward Hound</h3>
+                    <p class="price">$46.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="31">
+                    <img src="./Images/t7.jpg" alt="Product Image" id="main-image">
+                    <h3>Ruffwear</h3>
+                    <p class="price">$70.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="32">
+                    <img src="./Images/t8.jpg" alt="Product Image" id="main-image">
+                    <h3>Trixie</h3>
+                    <p class="price">$54.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="33">
+                    <img src="./Images/t1.jpg " alt="" id="main-image">
+                    <h3>Bergan</h3>
+                    <p class="price">$44.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="34">
+                    <img src="./Images/t9.jpg" alt="Product Image" id="main-image">
+                    <h3>FurHaven</h3>
+                    <p class="price">$60.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="35">
+                    <img src="./Images/t10.jpg" alt="Product Image" id="main-image">
+                    <h3>Petmate</h3>
+                    <p class="price">$70.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="36">
+                    <img src="./Images/t11.jpg" alt="Product Image" id="main-image">
+                    <h3>Puppia</h3>
+                    <p class="price">$64.00</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+
+
+        </section>
+        <footer class="footer" id="tar-a">
+            <div class="footer-container">
+                <div class="footer-row">
+                    <div class="footer-col">
+                        <h4>About Us</h4>
+                        <p>Pet Paradise Emporium is your go-to source for premium pet products. We offer a wide range of
+                            essentials to ensure your pets are happy and healthy.</p>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="product.html">Product</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li><a href="#">Email: yogeshwarandofficial@gmail.com</a></li>
+                            <li><a href="#">Phone: +91 7010850923</a></li>
+                            <li><a href="#">Address: 60N/3 , Narasappan Street , TVR</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.freelancer.in/u/YogeshwaranTech" target="_blank"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/itzz_coding_yogesh" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/yogeshwaran-d" target="_blank"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <script src="./js/pro_script.js"></script>
+    <script src="./js/combine_cart.js"></script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Pet Paradise Emporium</title>
+    <link rel="stylesheet" href="./CSS/contact.css">
+</head>
+
+<body>
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <h2>Contact Us</h2><br>
+            <p class="address">
+                <strong>Address:</strong> br
+                60N/2 , Nasarasappan Street, Thiruvarur -610001
+            </p><br>
+            <p class="phone">
+                <strong>Let's Talk:</strong> <br>
+                <a href="tel:+917010850923">+91 7010850923</a>
+            </p><br>
+            <p class="email">
+                <strong>General Support:</strong> <br>
+                <a href="mailto:yogeshwarandofficial@gmail.com">yogeshwarandofficial@gmail.com</a>
+            </p>
+        </div>
+        <div class="contact-form">
+            <h2>Send Us A Message</h2>
+            <form action="submit_form.php" method="post">
+                <div class="form-group">
+                    <label for="first-name">Tell Us Your Name *</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="First name" required>
+                    <input type="text" id="last-name" name="last-name" placeholder="Last name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Enter Your Email *</label>
+                    <input type="email" id="email" name="email" placeholder="Eg. example@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Enter Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Eg. +1 800 0000000">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" placeholder="Write us a message" required></textarea>
+                </div>
+                <button type="submit" onclick="redirectToPageh()">Send Message</button>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        function redirectToPageh() {
+            window.location.href = './index.html';
+        }
+    </script>
+</body>
+
+</html>
